@@ -1,27 +1,43 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import {BNavbar, BNavbarBrand, BNavItem, BNavbarNav} from "bootstrap-vue-next";
 </script>
 
-<template>
+<template id="background">
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
+    <BNavbar variant="primary-subtle" id="navBar">
+      <BNavbarBrand tag="h1">Rayne's Portfolio</BNavbarBrand>
+      <BNavbarNav>
+        <BNavItem to="/">Home</BNavItem>
+        <BNavItem to="/about">About Me</BNavItem>
+        <BNavItem to="/projects">Projects</BNavItem>
+      </BNavbarNav>
+    </BNavbar>
   </header>
+  <body>
+    <RouterView />
+  </body>
+  <footer>
+    some stuff
+  </footer>
 
-  <RouterView />
+
 </template>
 
 <style scoped>
-header {
+
+#background {
+  background-color: #b07373;
+}
+
+body {
+  width: 80%;
+  background-color: #b1e1ff;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*header {
   line-height: 1.5;
   max-height: 100vh;
 }
@@ -81,5 +97,5 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
+}*/
 </style>
