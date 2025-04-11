@@ -11,6 +11,7 @@ import {BNavbar, BNavbarBrand, BNavItem, BNavbarNav} from "bootstrap-vue-next";
         <BNavItem to="/">Home</BNavItem>
         <BNavItem to="/about">About Me</BNavItem>
         <BNavItem to="/projects">Projects</BNavItem>
+        <BNavItem to="/achievements">Achievements</BNavItem>
       </BNavbarNav>
     </BNavbar>
   </header>
