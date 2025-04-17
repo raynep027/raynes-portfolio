@@ -1,11 +1,12 @@
-@import './base.css';
+/*@import './base.css';*/
+/*@import "skybackground-opengameart.png";*/
 
-#app {
-  max-width: 1280px;
+/*#app {
+  !*max-width: 1280px;*!
   margin: 0 auto;
-  padding: 2rem;
+  !*padding: 2rem;*!
   font-weight: normal;
-}
+}*/
 
 a,
 .green {
@@ -25,11 +26,20 @@ a,
   body {
     display: flex;
     place-items: center;
+
   }
 
-  #app {
+  /*#app {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    !*padding: 0 2rem;*!
+  }*/
+
+  #app {
+    background-image: url("portfolio/src/assets/skybackground-opengameart.png");
+    background-size: cover;
+    display: block;
+    min-height: 100vh;
+    width: 100%;
   }
 }

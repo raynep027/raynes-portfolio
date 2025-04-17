@@ -1,11 +1,13 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import {BNavbar, BNavbarBrand, BNavItem, BNavbarNav} from "bootstrap-vue-next";
+
+
 </script>
 
-<template id="background">
+<template>
   <header>
-    <BNavbar variant="primary-subtle" id="navBar">
+    <BNavbar id="navBar">
       <BNavbarBrand tag="h1">Rayne's Portfolio</BNavbarBrand>
       <BNavbarNav>
         <BNavItem to="/">Home</BNavItem>
@@ -15,29 +17,71 @@ import {BNavbar, BNavbarBrand, BNavItem, BNavbarNav} from "bootstrap-vue-next";
       </BNavbarNav>
     </BNavbar>
   </header>
-  <body>
-    <RouterView />
-  </body>
+
+  <div id="container">
+    <div id="fillToBottom">
+      <RouterView />
+    </div>
+
+  </div>
+
+
+
   <footer>
-    some stuff
+    <div>
+        this is in the footer
+    </div>
   </footer>
+
 
 
 </template>
 
 <style scoped>
 
-#background {
-  background-color: #b07373;
+#app {
+  /*background: url("portfolio/src/assets/skybackground-opengameart.png") !important;*/
 }
 
-body {
+#container {
+  display: flex;
   width: 80%;
+  background-color: rgba(191, 172, 192, 0.43);
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-height: 100vh;
+}
+
+#fillToBottom {
+  flex: 1;
+  padding: 10px;
+}
+
+footer {
+  height: 8%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3d3452;
+  color: white;
+  text-align: center;
+}
+
+#navBar {
+  background-color: #5c4e79;
+}
+
+
+
+/*body {
   background-color: #b1e1ff;
   display: flex;
   margin-right: auto;
   margin-left: auto;
-}
+  height: 80%;
+}*/
 /*header {
   line-height: 1.5;
   max-height: 100vh;
