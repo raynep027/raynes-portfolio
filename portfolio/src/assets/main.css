@@ -1,12 +1,3 @@
-/*@import './base.css';*/
-/*@import "skybackground-opengameart.png";*/
-
-/*#app {
-  !*max-width: 1280px;*!
-  margin: 0 auto;
-  !*padding: 2rem;*!
-  font-weight: normal;
-}*/
 
 a,
 .green {
@@ -29,14 +20,8 @@ a,
 
   }
 
-  /*#app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    !*padding: 0 2rem;*!
-  }*/
-
   #app {
-    background-image: url("portfolio/src/assets/skybackground-opengameart.png");
+    background-repeat: no-repeat;
     background-size: cover;
     display: block;
     min-height: 100vh;
