@@ -8,12 +8,12 @@ import {BNavbar, BNavbarBrand, BNavItem, BNavbarNav} from "bootstrap-vue-next";
 <template>
   <header>
     <BNavbar id="navBar">
-      <BNavbarBrand tag="h1">Rayne's Portfolio</BNavbarBrand>
+      <BNavbarBrand><h3 class="navText">Rayne's Portfolio</h3></BNavbarBrand>
       <BNavbarNav>
-        <BNavItem to="/">Home</BNavItem>
-        <BNavItem to="/about">About Me</BNavItem>
-        <BNavItem to="/projects">Projects</BNavItem>
-        <BNavItem to="/achievements">Achievements</BNavItem>
+        <BNavItem to="/"><span class="navText">Home</span></BNavItem>
+        <BNavItem to="/about"><span class="navText">About Me</span></BNavItem>
+        <BNavItem to="/projects"><span class="navText">Projects</span></BNavItem>
+        <BNavItem to="/achievements"><span class="navText">Achievements</span></BNavItem>
       </BNavbarNav>
     </BNavbar>
   </header>
@@ -29,7 +29,7 @@ import {BNavbar, BNavbarBrand, BNavItem, BNavbarNav} from "bootstrap-vue-next";
 
   <footer>
     <div>
-        this is in the footer
+      © Rayne Perry, 2025
     </div>
   </footer>
 
@@ -41,6 +41,10 @@ import {BNavbar, BNavbarBrand, BNavItem, BNavbarNav} from "bootstrap-vue-next";
 
 #app {
   /*background: url("portfolio/src/assets/skybackground-opengameart.png") !important;*/
+}
+
+.navText {
+  color: white;
 }
 
 #container {
