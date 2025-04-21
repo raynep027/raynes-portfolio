@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {BCard, BRow, BCol, BCarousel, BCarouselSlide, BCardBody, BCardText, BImg} from "bootstrap-vue-next";
+import {BCard, BRow, BCol, BCarousel, BCarouselSlide, BCardBody, BCardText, BImg, BButton} from "bootstrap-vue-next";
 
 /*const props = defineProps({
   imageOnRight: Boolean,
@@ -21,7 +21,7 @@ const props = defineProps(['imageOnRight', 'title', 'description', 'photos', 'li
         <BCarousel indicators controls>
           <BCarouselSlide v-for="(item, index) in photos" :item="item" :index="index" :key="item.url">
             <template #img>
-              <BImg :src="item.url" alt="image slot" height="480" width="854"/>
+              <BImg :src="item.url" alt="image slot" fluid/>
             </template>
           </BCarouselSlide>
         </BCarousel>
@@ -31,6 +31,7 @@ const props = defineProps(['imageOnRight', 'title', 'description', 'photos', 'li
           <BCardText>
             {{ description }}
           </BCardText>
+          <BButton pill :href="link">Visit Site</BButton>
         </BCardBody>
       </BCol>
     </BRow>
@@ -43,19 +44,22 @@ const props = defineProps(['imageOnRight', 'title', 'description', 'photos', 'li
           <BCardText>
             {{ description }}
           </BCardText>
+          <BButton pill :href="link">Visit Site</BButton>
         </BCardBody>
       </BCol>
       <BCol md="6">
         <BCarousel indicators controls>
           <BCarouselSlide v-for="(item, index) in photos" :item="item" :index="index" :key="item.url">
             <template #img>
-              <BImg :src="item.url" alt="image slot" height="480" width="854"/>
+              <BImg :src="item.url" alt="image slot" fluid/>
             </template>
           </BCarouselSlide>
         </BCarousel>
       </BCol>
     </BRow>
   </BCard>
+
+
 
 </template>
 
