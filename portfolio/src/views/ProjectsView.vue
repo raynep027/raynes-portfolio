@@ -9,8 +9,15 @@ import accessoryImg from '@/assets/DTBRkeyboards/accessories.png';
 import FAQImg from '@/assets/DTBRkeyboards/FAQ.png';
 import keychronIMG from '@/assets/DTBRkeyboards/keychronq3.png';
 
+import accountInfoImg from '@/assets/motodo/accountinfo.png';
+import bookmarkImg from '@/assets/motodo/bookmarks.png';
+import mainpageImg from '@/assets/motodo/mainpage.png';
+import signinImg from '@/assets/motodo/signin.png';
+import signupImg from '@/assets/motodo/signup.png';
+
 const bubbleBrawlImages = ref([{url: bb1Img}, {url: bb2Img}, {url: bb3Img}]);
-const bubbleBrawlDesc = "Honourable Mention for Best Multiplayer";
+const bubbleBrawlDesc = "Received an Honourable Mention for Best Multiplayer at the SaskGlobal Game Jam where " +
+    "the theme was 'bubbles'. Made with a team, Bubble Brawl is a multiplayer platformer, controller, shooter game.";
 
 const keyboardImages = ref([{url: keychronIMG}, {url: FAQImg}, {url: accessoryImg}]);
 const keyboardsDesc = "Made for the final project of my year one CWEB 195 class, DTBR keyboards is a mock website for" +
@@ -18,7 +25,11 @@ const keyboardsDesc = "Made for the final project of my year one CWEB 195 class,
     " classmates and myself. While we all had a hand in most of the project, the section that I worked on are the " +
     "'Showcase' pages and the FAQ page."
 
-const motodoDesc = "filler desc"
+const motodoImages = ref([{url: mainpageImg}, {url: bookmarkImg}, {url: signinImg}, {url: signupImg}, {url: accountInfoImg}]);
+const motodoDesc = "For the past year, I have been working with an external industry client, zu, to develop a" +
+    " city events browsing web application. I have worked with a team of other students to build the application, and" +
+    " some of the features I specifically developed are the export to Google Calendar functionality, the bookmarks, " +
+    "search feature, the overall UI/UX design, among others."
 
 </script>
 
@@ -26,7 +37,7 @@ const motodoDesc = "filler desc"
   <div class="titleArea">
     <h1>Projects</h1>
   </div>
-  <Project title="Motodo Events App" :image-on-right="true" :photos="bubbleBrawlImages" :description="motodoDesc"
+  <Project title="Motodo Events App" :image-on-right="true" :photos="motodoImages" :description="motodoDesc"
   link="https://effulgent-dolphin-09ec55.netlify.app/"/>
   <br />
   <Project title="Bubble Brawl" :image-on-right="false" :photos="bubbleBrawlImages" :description="bubbleBrawlDesc"

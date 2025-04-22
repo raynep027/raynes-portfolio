@@ -1,15 +1,7 @@
 <script setup lang="ts">
 import {BCard, BRow, BCol, BCarousel, BCarouselSlide, BCardBody, BCardText, BImg, BButton} from "bootstrap-vue-next";
 
-/*const props = defineProps({
-  imageOnRight: Boolean,
-  title: String,
-  description: String,
-  photos:
-})*/
-
 const props = defineProps(['imageOnRight', 'title', 'description', 'photos', 'link']);
-
 
 </script>
 
